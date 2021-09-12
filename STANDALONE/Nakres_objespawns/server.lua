@@ -37,13 +37,12 @@ RegisterCommand('nesnelerisil', function(source)
 end)
 
 function checkperm(psteam)
-	for k, v in pairs(approved) do
+	for i, v in pairs(approved) do
 		if psteam == v then
 			return true
-        else
-            return false
 		end
 	end
+	return false
 end
 
 function msg(player) --Your notify trigger
