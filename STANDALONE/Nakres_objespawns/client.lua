@@ -31,7 +31,7 @@ end)
 
 RegisterNUICallback("objectspawn", function(data)
 	local playerCoords = GetEntityCoords(PlayerPedId()) --If you want it to spawn in the direction you are looking at, comment it and open the other lines. / Baktığınız yöne spawn olmasını isterseniz bunu yoruma alıp diğer satırları açın
-	obje = CreateObject(data.objname, playerCoords.x + 1.25, playerCoords.y, playerCoords.z, false, false, false) -->  ""     ""           ""
+	obje = CreateObject(data.objname, playerCoords.x + 1.25, playerCoords.y, playerCoords.z, true, true, true) -->  ""     ""           ""
 		-- local hit, coords, entity = RayCastGamePlayCamera(1000.0) -- If you want it to spawn in the direction you are looking at, open this and the comments below. / Baktığınız yöne spawnlamasını isterseniz bu ve alttaki yorum satırlarını açın.
 		-- obje = CreateObject(data.objname, coords.x, coords.y, coords.z, false, false, false)
 		-- ESX.ShowNotification('Obje çıkartıldı')
